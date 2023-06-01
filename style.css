@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*[aria-hidden=true] {
+  display: none;
+}
+
+*[aria-hidden=false] {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  height: 24rem;
+  width: 24rem;
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.container * {
+  margin-block: 1rem;
+}
+.container .icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  background: hsl(213, 19%, 18%);
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+}
+.container h1 {
+  font-size: 1.5rem;
+}
+.container p {
+  font-size: 15px;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.5;
+}
+.container .btns {
+  display: flex;
+  justify-content: space-between;
+}
+.container .btns input {
+  cursor: pointer;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.container .btns input:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.container .btns input:active, .container .btns input:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.container button {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 100%;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  transition: 0.5s ease;
+}
+.container button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.reaction-card {
+  text-align: center;
+}
+.reaction-card #msg {
+  height: 2rem;
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  padding-top: 0.4rem;
+}/*# sourceMappingURL=style.css.map */
