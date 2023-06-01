@@ -31,5 +31,9 @@ function react() {
         case "5":
             msg.innerText = "You selected 5 out of 5";
             break;
+            case " ":
+                msg.innerText = "You selected none";
+                break;
     }
+    
 }
